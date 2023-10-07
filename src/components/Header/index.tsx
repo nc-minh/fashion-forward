@@ -1,9 +1,13 @@
+'use client';
+
 import Image from 'next/image';
 import shoppingCart from '@/assets/images/shopping-cart.png';
+import { useCartStore } from '@/store/useCartStore';
 
 export const Header = () => {
+  const nuts = useCartStore((state) => state.ids);
   return (
-    <header className="flex items-center justify-between p-4">
+    <header className="flex items-center justify-between px-8 py">
       <div className="text-2xl font-bold">Fashion Forward</div>
       <div className="flex items-center justify-between space-x-4">
         <a href="   " className="text-lg font-medium">
@@ -16,7 +20,9 @@ export const Header = () => {
           Nam
         </a>
 
-        <div>
+        {JSON.stringify(nuts)}
+
+        <div className="cursor-pointer">
           <Image
             src={shoppingCart}
             width={65}

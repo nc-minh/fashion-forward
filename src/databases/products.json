@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "name": "Áo polo nữ in hoạ tiết dáng ôm",
+    "image_url": "1.webp",
+    "price": 399000,
+    "label": "new",
+    "category": "FEMALE"
+  },
+  {
+    "id": 2,
+    "name": "Áo nỉ nữ bo gấu có hình in",
+    "image_url": "2.webp",
+    "price": 249000,
+    "label": "new",
+    "category": "FEMALE"
+  },
+  {
+    "id": 3,
+    "name": "Áo len nữ cổ tròn tay lửng",
+    "image_url": "3.webp",
+    "price": 299000,
+    "label": "new",
+    "category": "FEMALE"
+  },
+  {
+    "id": 4,
+    "name": "Áo cardigan nữ cổ V dài tay dáng ngắn vừa",
+    "image_url": "4.webp",
+    "price": 399000,
+    "label": "new",
+    "category": "FEMALE"
+  },
+  {
+    "id": 5,
+    "name": "Áo len nữ cổ polo tay lửng dáng ôm",
+    "image_url": "5.webp",
+    "price": 499000,
+    "label": "new",
+    "category": "FEMALE"
+  },
+  {
+    "id": 6,
+    "name": "Bộ mặc nhà nữ áo dài tay quần dài in hoạ tiết",
+    "image_url": "6.webp",
+    "price": 599000,
+    "label": "new",
+    "category": "FEMALE"
+  }
+]

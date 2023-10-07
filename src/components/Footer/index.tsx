@@ -1,7 +1,7 @@
 export const Footer = () => {
   return (
     <footer className="flex items-center justify-center flex-col p-4 bg-white border-t-2">
-      <div className="flex justify-around p-4 w-full">
+      <div className="flex justify-around p-4 w-full text-lg">
         <div className="flex flex-col">
           <strong className="text-lg">Liên hệ</strong>
           <ul>

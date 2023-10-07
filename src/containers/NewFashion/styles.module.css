@@ -1,0 +1,16 @@
+.container {
+  width: 1200px;
+  margin: 3rem 0;
+}
+
+.products {
+  display: grid;
+  gap: 30px 24px;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+}
+
+.title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
