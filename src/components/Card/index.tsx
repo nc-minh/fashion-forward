@@ -22,7 +22,7 @@ export const Card = (props: Props) => {
   return (
     <div className={`${styles.container}`}>
       <span className={`${styles.label}`}>{label}</span>
-      <Link href={`${id}`} className={`${styles.link}`}>
+      <Link href={`/products/${id}`} className={`${styles.link}`}>
         <Image
           src={image_url}
           alt={name}
