@@ -1,0 +1,50 @@
+.cart {
+  width: 400px;
+  height: 100%;
+  padding: 24px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.cartTitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.cartIconBack {
+  cursor: pointer;
+}
+
+.cartHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.content {
+  flex: 1;
+  overflow-y: auto;
+}
+
+.cartFooter {
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.finalPrice {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.2rem;
+  padding: 12px 0;
+}
+
+.calcBtn {
+  width: 100%;
+  color: rgb(255, 255, 255);
+  background-color: red;
+}

@@ -5,6 +5,7 @@ import Link from 'next/link';
 
 import styles from './styles.module.css';
 import { useCartStore } from '@/store/useCartStore';
+import { useCallback } from 'react';
 
 interface Props {
   id: number;
@@ -16,8 +17,22 @@ interface Props {
 }
 
 export const Card = (props: Props) => {
-  const { id, name, image_url, price, label } = props;
-  const setCart = useCartStore((state) => state.setIds);
+  const { id, name, image_url, price, label, category } = props;
+  const setCart = useCartStore((state) => state.setCart);
+  const setOpenCart = useCartStore((state) => state.setOpenCart);
+
+  const handleAddToCart = useCallback(() => {
+    setCart({
+      id,
+      name,
+      image_url,
+      price,
+      label,
+      category,
+    });
+
+    setOpenCart(true);
+  }, [category, id, image_url, label, name, price, setCart, setOpenCart]);
 
   return (
     <div className={`${styles.container}`}>
@@ -32,12 +47,7 @@ export const Card = (props: Props) => {
           style={{ width: '100%', height: '100%', objectFit: 'cover' }}
         />
       </Link>
-      <div
-        className={styles.addToCart}
-        onClick={() => {
-          setCart(id);
-        }}
-      >
+      <div className={styles.addToCart} onClick={handleAddToCart}>
         Thêm nhanh vào giỏ
       </div>
       <div className={`${styles.contentFooter}`}>

@@ -2,10 +2,9 @@
 
 import Image from 'next/image';
 import shoppingCart from '@/assets/images/shopping-cart.png';
-import { useCartStore } from '@/store/useCartStore';
+import { Cart } from '@/containers/Cart';
 
 export const Header = () => {
-  const nuts = useCartStore((state) => state.ids);
   return (
     <header className="flex items-center justify-between px-8 py">
       <div className="text-2xl font-bold">Fashion Forward</div>
@@ -20,16 +19,16 @@ export const Header = () => {
           Nam
         </a>
 
-        {JSON.stringify(nuts)}
-
-        <div className="cursor-pointer">
-          <Image
-            src={shoppingCart}
-            width={65}
-            height={65}
-            alt="Shopping cart"
-          />
-        </div>
+        <Cart>
+          <div className="cursor-pointer">
+            <Image
+              src={shoppingCart}
+              width={65}
+              height={65}
+              alt="Shopping cart"
+            />
+          </div>
+        </Cart>
       </div>
     </header>
   );

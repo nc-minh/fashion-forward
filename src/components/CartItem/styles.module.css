@@ -1,0 +1,25 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 12px 0;
+  position: relative;
+}
+
+.imageWrapper {
+  width: 100px;
+  margin-right: 12px;
+}
+
+.content {
+  font-size: 1.2rem;
+  flex: 1;
+}
+
+.deleteIcon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+  color: red;
+}
