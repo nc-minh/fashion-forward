@@ -10,11 +10,12 @@ interface Props {
   name: string;
   image_url: string;
   price: number;
+  quantity?: number;
   onRemove: (id: number) => void;
 }
 
 export const CartItem = (props: Props) => {
-  const { id, name, image_url, price, onRemove = () => {} } = props;
+  const { id, name, image_url, price, onRemove = () => {}, quantity } = props;
 
   const handleRemove = useCallback(() => {
     onRemove(id);
@@ -35,6 +36,7 @@ export const CartItem = (props: Props) => {
       <div className={styles.content}>
         <h4 className={styles.name}>{name}</h4>
         <p className={styles.price}>{convertToCurrency(price)}</p>
+        <p className={styles.quantity}>{quantity}</p>
       </div>
 
       <div className={styles.deleteIcon} onClick={handleRemove}>

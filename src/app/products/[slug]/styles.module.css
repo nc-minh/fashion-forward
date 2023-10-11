@@ -1,0 +1,28 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.item {
+  display: flex;
+}
+
+.imageWrapper {
+  height: 400px;
+  max-width: 1000px;
+}
+
+.contentWrapper {
+  margin-left: 20px;
+}
+
+.btn {
+  background-color: rgb(255, 0, 0);
+  color: rgb(255, 255, 255);
+  padding: 10px 20px;
+  width: 100px;
+  margin: 20px 0;
+}

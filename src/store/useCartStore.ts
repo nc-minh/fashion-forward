@@ -12,17 +12,49 @@ const initialState: InitialState = {
 };
 
 interface CartState extends InitialState {
-  setCart: (id: Product) => void;
+  setCart: (p: Product) => void;
   remove: (id: number) => void;
   setOpenCart: (isOpen: boolean) => void;
+  clearCart: () => void;
 }
 
 export const useCartStore = create<CartState>((set) => ({
   ...initialState,
-  setCart: (id) => set((state) => ({ cart: [...state.cart, id] })),
-  remove: (id) =>
-    set((state) => ({
-      cart: state.cart.filter((item) => item.id !== id),
-    })),
+  setCart: (p) =>
+    set((state) => {
+      const newCart = [...state.cart];
+      const index = newCart.findIndex((item) => item.id === p.id);
+
+      if (index === -1) {
+        newCart.push({ ...p, quantity: 1 });
+      } else {
+        newCart[index].quantity = newCart[index].quantity! + 1;
+      }
+
+      return {
+        cart: newCart,
+      };
+    }),
+  remove: (id) => {
+    set((state) => {
+      const newCart = [...state.cart];
+      const index = newCart.findIndex((item) => item.id === id);
+
+      if (index === -1) {
+        return state;
+      }
+
+      if (newCart[index].quantity === 1) {
+        newCart.splice(index, 1);
+      } else {
+        newCart[index].quantity = newCart[index].quantity! - 1;
+      }
+
+      return {
+        cart: newCart,
+      };
+    });
+  },
   setOpenCart: (isOpen) => set(() => ({ isOpenCart: isOpen })),
+  clearCart: () => set(() => ({ cart: [] })),
 }));

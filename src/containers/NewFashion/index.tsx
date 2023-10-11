@@ -12,7 +12,7 @@ export const NewFashion = () => {
     <div className={styles.container}>
       <h2 className={styles.title}>Hàng mới</h2>
       <div className={`${styles.products}`}>
-        {products?.map((product) => (
+        {products?.map((product, index) => (
           <Card
             key={product.id}
             category={product.category}
