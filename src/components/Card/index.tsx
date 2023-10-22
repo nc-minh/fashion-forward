@@ -6,6 +6,7 @@ import Link from 'next/link';
 import styles from './styles.module.css';
 import { useCartStore } from '@/store/useCartStore';
 import { useCallback } from 'react';
+import { convertToCurrency } from '@/utils/common';
 
 interface Props {
   id: number;
@@ -52,7 +53,9 @@ export const Card = (props: Props) => {
       </div>
       <div className={`${styles.contentFooter}`}>
         <h3 className={`${styles.name}`}>{name}</h3>
-        <strong className={`${styles.price}`}>{price} đ</strong>
+        <strong className={`${styles.price}`}>
+          {convertToCurrency(price)}
+        </strong>
       </div>
     </div>
   );
