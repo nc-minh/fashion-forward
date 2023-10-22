@@ -11,22 +11,23 @@ import { Button } from '@mui/material';
 import { useCartStore } from '@/store/useCartStore';
 
 export default function ProductItem({ params }: any) {
-  console.log(params);
-  const products = useProducts();
+  const slug = params?.slug ?? '';
+
+  const products = useProducts({});
 
   const setCart = useCartStore((state) => state.setCart);
   const setOpenCart = useCartStore((state) => state.setOpenCart);
 
   const product = useMemo(
-    () => products?.find((item) => String(item.id) === params?.slug),
-    [products, params?.slug]
+    () => products?.find((item) => String(item.id) === slug),
+    [products, slug]
   );
 
   const handleAddToCart = useCallback(() => {
     setCart({
       id: product?.id ?? 0,
       name: product?.name ?? '',
-      image_url: `/products/${product?.image_url}` ?? '',
+      image_url: `/products/${product?.image_url}`,
       price: product?.price ?? 0,
       label: product?.label ?? '',
       category: product?.category ?? '',

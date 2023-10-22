@@ -48,3 +48,9 @@
   color: rgb(255, 255, 255);
   background-color: red;
 }
+
+@media screen and (max-width: 650px) {
+  .cart {
+    width: 100%;
+  }
+}

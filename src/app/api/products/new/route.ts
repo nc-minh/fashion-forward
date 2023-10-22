@@ -6,26 +6,14 @@ const dataFilePath = path.join(process.cwd(), 'src/databases/products.json');
 
 export async function GET(request: Request) {
   try {
-    const url = new URL(request.url);
-    const query = url.searchParams;
-    const categoryCode = query.get('category_code');
-
     const fileContents = await fs.readFile(dataFilePath, 'utf8');
     const objectData: Product[] = JSON.parse(fileContents);
 
-    if (categoryCode) {
-      const filteredData = objectData.filter(
-        (product) => product.category === categoryCode
-      );
+    const filteredData = objectData.filter(
+      (product) => product.label === 'new'
+    );
 
-      return new Response(JSON.stringify(filteredData), {
-        headers: {
-          'Content-Type': 'application/json',
-        },
-      });
-    }
-
-    return new Response(JSON.stringify(objectData), {
+    return new Response(JSON.stringify(filteredData), {
       headers: {
         'Content-Type': 'application/json',
       },

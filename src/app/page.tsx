@@ -1,4 +1,6 @@
 import { Banner } from '@/components/Banner';
+import { FemaleFashion } from '@/containers/FemaleFashion';
+import { MaleFashion } from '@/containers/MaleFashion';
 import { NewFashion } from '@/containers/NewFashion';
 
 export default function Home() {
@@ -7,6 +9,10 @@ export default function Home() {
       <Banner />
 
       <NewFashion />
+
+      <FemaleFashion />
+
+      <MaleFashion />
     </main>
   );
 }

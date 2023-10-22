@@ -1,8 +1,12 @@
+import styles from './styles.module.css';
+
 export const Footer = () => {
   return (
     <footer className="flex items-center justify-center flex-col p-4 bg-white border-t-2">
-      <div className="flex justify-around p-4 w-full text-lg">
-        <div className="flex flex-col">
+      <div
+        className={`flex justify-around p-4 w-full text-lg ${styles.footer}`}
+      >
+        <div className={`flex flex-col ${styles.first}`}>
           <strong className="text-lg">Liên hệ</strong>
           <ul>
             <li className="py-1">
@@ -23,7 +27,7 @@ export const Footer = () => {
           </ul>
         </div>
       </div>
-      <p>© 2023 FASHION FORWARD</p>
+      <p className={`${styles.cpr}`}>© 2023 FASHION FORWARD</p>
     </footer>
   );
 };

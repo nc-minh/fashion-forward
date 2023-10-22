@@ -1,16 +1,16 @@
 'use client';
 
 import { Card } from '@/components/Card';
+import { useProducts } from '@/hooks/products';
 
 import styles from './styles.module.css';
-import { useNewProducts } from '@/hooks/newProducts';
 
-export const NewFashion = () => {
-  const products = useNewProducts();
+export const MaleFashion = () => {
+  const products = useProducts({ category_code: 'MALE' });
 
   return (
     <div className={styles.container}>
-      <h2 className={styles.title}>Hàng mới</h2>
+      <h2 className={styles.title}>Hàng Nam</h2>
       <div className={`${styles.products}`}>
         {products?.map((product, index) => (
           <Card

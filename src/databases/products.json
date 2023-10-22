@@ -46,5 +46,197 @@
     "price": 599000,
     "label": "new",
     "category": "FEMALE"
+  },
+  {
+    "id": 7,
+    "name": "Áo ba lỗ nữ cổ tròn dáng ôm",
+    "image_url": "7.webp",
+    "price": 104300,
+    "label": "new",
+    "category": "FEMALE"
+  },
+  {
+    "id": 8,
+    "name": "Áo sát nách nữ vai cánh tiên",
+    "image_url": "8.webp",
+    "price": 149500,
+    "label": "new",
+    "category": "FEMALE"
+  },
+  {
+    "id": 9,
+    "name": "Áo khoác gilet chần bông bé gái có mũ chống thấm nước",
+    "image_url": "9.webp",
+    "price": 449000,
+    "label": "new",
+    "category": "FEMALE"
+  },
+  {
+    "id": 10,
+    "name": "Bộ quần áo nỉ bé trai phối màu",
+    "image_url": "10.webp",
+    "price": 679000,
+    "label": "new",
+    "category": "MALE"
+  },
+  {
+    "id": 11,
+    "name": "Áo polo nữ in hoạ tiết dáng ôm",
+    "image_url": "11.webp",
+    "price": 399000,
+    "label": "female",
+    "category": "FEMALE"
+  },
+  {
+    "id": 12,
+    "name": "Áo polo nữ interlock dáng ngắn",
+    "image_url": "12.webp",
+    "price": 299000,
+    "label": "female",
+    "category": "FEMALE"
+  },
+  {
+    "id": 13,
+    "name": "Áo polo nữ interlock dáng ngắn phối màu",
+    "image_url": "13.webp",
+    "price": 299000,
+    "label": "female",
+    "category": "FEMALE"
+  },
+  {
+    "id": 14,
+    "name": "Áo polo nữ basic cổ bẻ cộc tay",
+    "image_url": "14.webp",
+    "price": 299000,
+    "label": "female",
+    "category": "FEMALE"
+  },
+  {
+    "id": 15,
+    "name": "Áo polo nữ basic",
+    "image_url": "15.webp",
+    "price": 279300,
+    "label": "female",
+    "category": "FEMALE"
+  },
+  {
+    "id": 16,
+    "name": "Váy liền nữ ngắn tay dáng A dài",
+    "image_url": "16.webp",
+    "price": 899000,
+    "label": "female",
+    "category": "FEMALE"
+  },
+  {
+    "id": 17,
+    "name": "Chân váy nữ chất liệu gió",
+    "image_url": "17.webp",
+    "price": 699000,
+    "label": "female",
+    "category": "FEMALE"
+  },
+  {
+    "id": 18,
+    "name": "Váy liền nữ dáng dài, phối màu",
+    "image_url": "18.webp",
+    "price": 899000,
+    "label": "female",
+    "category": "FEMALE"
+  },
+  {
+    "id": 19,
+    "name": "Váy liền nữ interlock cổ bẻ dáng A có cắt eo",
+    "image_url": "19.webp",
+    "price": 599000,
+    "label": "female",
+    "category": "FEMALE"
+  },
+  {
+    "id": 20,
+    "name": "Bộ mặc nhà nữ hoạ tiết",
+    "image_url": "20.webp",
+    "price": 599000,
+    "label": "female",
+    "category": "FEMALE"
+  },
+  {
+    "id": 21,
+    "name": "Áo phông unisex người lớn cotton dáng rộng",
+    "image_url": "21.webp",
+    "price": 399000,
+    "label": "male",
+    "category": "MALE"
+  },
+  {
+    "id": 22,
+    "name": "Áo phông nam cotton in hình Avenger dáng rộng",
+    "image_url": "22.webp",
+    "price": 399000,
+    "label": "male",
+    "category": "MALE"
+  },
+  {
+    "id": 23,
+    "name": "Áo phông nam cotton dáng rộng có hình in",
+    "image_url": "23.webp",
+    "price": 299000,
+    "label": "male",
+    "category": "MALE"
+  },
+  {
+    "id": 24,
+    "name": "Áo phông nam cotton basic dáng suông",
+    "image_url": "24.webp",
+    "price": 149000,
+    "label": "male",
+    "category": "MALE"
+  },
+  {
+    "id": 25,
+    "name": "Áo phông nam cotton USA dáng rộng in họa tiết",
+    "image_url": "25.webp",
+    "price": 249000,
+    "label": "male",
+    "category": "MALE"
+  },
+  {
+    "id": 26,
+    "name": "Áo phông nam cotton basic dáng suông",
+    "image_url": "26.webp",
+    "price": 299000,
+    "label": "male",
+    "category": "MALE"
+  },
+  {
+    "id": 27,
+    "name": "Áo phông nam cổ tròn cộc tay dáng suông",
+    "image_url": "27.webp",
+    "price": 104300,
+    "label": "male",
+    "category": "MALE"
+  },
+  {
+    "id": 28,
+    "name": "Áo phông nam cổ tim cộc tay dáng suông",
+    "image_url": "28.webp",
+    "price": 104300,
+    "label": "male",
+    "category": "MALE"
+  },
+  {
+    "id": 29,
+    "name": "Áo phông nam cổ tròn dáng suông",
+    "image_url": "29.webp",
+    "price": 118300,
+    "label": "male",
+    "category": "MALE"
+  },
+  {
+    "id": 30,
+    "name": "Áo phông nam cổ tròn cộc tay dáng suông",
+    "image_url": "30.webp",
+    "price": 149000,
+    "label": "male",
+    "category": "MALE"
   }
 ]

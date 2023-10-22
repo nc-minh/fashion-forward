@@ -147,7 +147,7 @@ export const Cart = (props: Props) => {
         <DialogContent>
           <DialogContentText id="alert-dialog-description">
             Điền đầy đủ thông tin để đặt hàng nhanh chóng và nhận cơ hội trúng
-            nhà lầu xe hơi ghệ xịn!
+            nhà lầu xe hơi!
           </DialogContentText>
 
           <TextField

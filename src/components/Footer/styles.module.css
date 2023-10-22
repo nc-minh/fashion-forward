@@ -1,0 +1,13 @@
+@media screen and (max-width: 860px) {
+  .footer {
+    flex-direction: column;
+  }
+
+  .first {
+    margin-bottom: 1rem;
+  }
+
+  .cpr {
+    font-size: 1rem;
+  }
+}
