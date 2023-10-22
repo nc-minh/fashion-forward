@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import styles from './styles.module.css';
 
 export const Footer = () => {
@@ -20,7 +21,14 @@ export const Footer = () => {
           <strong className="text-lg">Hỗ trợ</strong>
           <ul>
             <li className="py-1">Giới thiệu</li>
-            <li className="py-1">Mạng xã hội</li>
+            <li className="py-1">
+              <Link
+                href="https://www.facebook.com/profile.php?id=61552249746023"
+                target="_blank"
+              >
+                Mạng xã hội
+              </Link>
+            </li>
             <li className="py-1">Hỏi đáp</li>
             <li className="py-1">Chính sách khách hàng</li>
             <li className="py-1">Chính sách vận chuyển</li>

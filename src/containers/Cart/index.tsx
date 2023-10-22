@@ -19,6 +19,7 @@ import {
   Snackbar,
   TextField,
 } from '@mui/material';
+import Link from 'next/link';
 
 interface Props {
   children: React.ReactNode;
@@ -148,6 +149,14 @@ export const Cart = (props: Props) => {
           <DialogContentText id="alert-dialog-description">
             Điền đầy đủ thông tin để đặt hàng nhanh chóng và nhận cơ hội trúng
             nhà lầu xe hơi!
+          </DialogContentText>
+
+          <DialogContentText id="alert-dialog-description" className="py-1">
+            Liên hệ với chúng tôi qua FACEBOOK:{' '}
+            <Link href="https://www.facebook.com/profile.php?id=61552249746023">
+              <strong>Fashion Forward</strong>
+            </Link>{' '}
+            để theo dõi đơn hàng và được tư vấn nhanh nhất!
           </DialogContentText>
 
           <TextField
